@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 	require_once ('../Models/Connection.php');
 	require_once ('../Models/Queries.php');
