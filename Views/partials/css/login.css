@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.wrapper {
+    background-color: #FFFFFF;
+    min-height: 368px;
+    overflow: hidden;
+}
+
+.wrapper .wrapper-top {
+    width: 100%;
+    background-color: #46ceac;
+    min-height: 300px;
+    position: relative;
+    text-align: center;
+}
+
+.wrapper .wrapper-top img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.wrapper .wrapper-top h1 {
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.wrapper .container {
+    width: 466px;
+    min-height: 400px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.14);
+    position: absolute;
+    left: 32%;
+    top: 30%;
+    z-index: 99;
+    
+}
+
+.container .form-login {
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+}
+
+.form-group {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-group .label-control {
+    color: #95a5a6;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 100%;
+}
+
+.form-group .label-control::before,
+.form-group .label-control::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.form-group .label-control::before{
+    border-bottom: 1px solid #95A5A6;
+    transition: transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+ 
+.form-group .label-control::after {
+    border-bottom: 2px solid #46ceac;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+ 
+.form-control {
+    color: #363c45;
+    border: none;
+    border-radius: 0;
+    margin-top: 20px;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+ 
+.form-group .label-control .label-text{
+    -webkit-transform: translate3d(0, 30px, 0) scale(1);
+    -moz-transform: translate3d(0, 30px, 0) scale(1);
+    transform: translate3d(0, 30px, 0) scale(1);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+}
+.active .label-control::after{
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+.active .label-control .label-text {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    color: #46ceac !important;
+}
+ 
+.input-field label:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #B9C1CA;
+    transition: transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+ 
+ 
+input.btn-login[type="submit"] {
+    background-color: #46ceac;
+    color: #FFFFFF;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.15s ease-in-out 0s;
+    width: 100%;
+}
+input.btn-login[type="submit"]:hover {
+    background: #35ba9b;
+}
+
+.text-login {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-login a {
+    color: #363c45;
+    text-decoration: none;
+}
+
+.text-login a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper .container {
+        left: 18%;
+    
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper .container {
+        left: 12%;
+        width: 325px;
+    }
+    
+}

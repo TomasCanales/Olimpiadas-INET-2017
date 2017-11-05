@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: #f4f6f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #CCCCCC;
+    height: 200px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+header nav {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+header nav .name {
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #CCCCCC;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+
+header nav ul li a {
+    color: #CCCCCC;
+    display:block;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+header .type {
+    width: 80%;
+    margin: auto;
+}
+
+header h2 {
+    padding: 15px 10px;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+header img {
+    float: left;
+    width: 80px;
+    padding-right: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: 80px auto 20px;
+    overflow: hidden;
+}
+
+.panel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.btn-panel {
+    width: 29.33333333333333%;
+    float: left;
+    background-color: #fa6c51;
+    margin: 20px 2%;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 400ms all;
+    cursor: pointer;
+}
+
+.btnFull-panel {
+    width: 96%;
+    float: left;
+    background-color: #fa6c51;
+    margin: 20px 2%;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 400ms all;
+    cursor: pointer;
+}
+
+.btn-panel:hover {
+    background-color: #e8553e;
+}
+
+@media only screen and (max-width:550px) {
+    .btn-panel {
+        width: 96%;
+        margin: 20px 0;
+    }
+
+    .btnFull-panel {
+        width: 96%;
+        margin: 20px 0;
+    }
+    
+}
+
+.container .title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container .data {
+    text-align: center;
+    font-size: 20px;
+}
+
+table.tbres {
+    width:100%;
+    margin:0 0 50px 0;
+    border-spacing: 0;
+}
+
+.tbres th {
+    color: #e8eaf6;
+    background-color: #46ceac;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+}
+
+.tbres td {
+    border-bottom: 1px solid #eeeeee;
+    padding:5px;
+    text-align:center;
+}
+
+@media only screen and (max-width: 760px)  {
+    table.tbres, 
+    .tbres thead, 
+    .tbres tbody, 
+    .tbres th, 
+    .tbres td, 
+    .tbres tr { 
+        display: block; 
+    }
+        
+    .tbres thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px; 
+    }
+        
+    .tbres tr { 
+        border: 1px solid #46ceac; 
+    }
+        
+    .tbres td { 
+        border: none;
+        border-bottom: 1px solid #eeeeee; 
+        position: relative;
+        padding-left: 50%;
+        text-align:left 
+    }
+        
+    .tbres td:before {  
+        position: absolute; 
+        top: 6px; 
+        left: 6px; 
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+        
+    .empleados td:nth-of-type(1):before {
+        content: "Nombre"; 
+    }
+    .empleados td:nth-of-type(2):before { 
+        content: "Apellido"; 
+    }
+    .empleados td:nth-of-type(3):before { 
+        content: "Cargo"; 
+    }
+    .empleados td:nth-of-type(4):before { 
+        content: "Acciones"; 
+    }
+    .empleados td:nth-of-type(5):before { 
+        content: "Acciones"; 
+    }
+
+    .zonas td:nth-of-type(1):before {
+        content: "Nombre"; 
+    }
+    .zonas td:nth-of-type(2):before { 
+        content: "IP"; 
+    }
+    .zonas td:nth-of-type(3):before { 
+        content: "Producto"; 
+    }
+    .zonas td:nth-of-type(4):before { 
+        content: "Acciones"; 
+    }
+    .zonas td:nth-of-type(5):before { 
+        content: "Acciones"; 
+    }
+        
+}
+
+.namePage {
+    width: 100%;
+    background-color: #46ceac;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.namePage a {
+    display: block;
+    width: 150px;
+    margin: auto;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 20px 0;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    transition: 400ms all;
+}
+
+.namePage a:hover {
+    background-color: #ffffff;
+    color: #46ceac;
+}
