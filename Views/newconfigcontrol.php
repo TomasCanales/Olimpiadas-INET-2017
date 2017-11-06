@@ -6,7 +6,7 @@ session_start();
 ?>
 <?php include "partials/head.php" ?>
 <?php include "partials/menu.php" ?>
-	<h1>Insertar nueva zona</h1>
+	<h1>Insertar nuevo config</h1>
 	<form id="insertZona" method="POST" action="../Controllers/Configcontrol/inserConfigcontrol.php">
 		<select name="controlProducto">
             <?php productoOption(); ?>
